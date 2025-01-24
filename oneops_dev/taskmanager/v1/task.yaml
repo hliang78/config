@@ -1,0 +1,40 @@
+name: TaskRequest
+props:
+  - name: id
+    type: string
+  - name: name
+    type: string
+  - name: request_time
+    type: time
+  - name: payload
+    type: byte_slice
+features:
+  - prop: id
+    feature: required
+  - prop: name
+    feature: max_length
+    feature_value: "50"
+name: TaskResponse
+props:
+  - name: id
+    type: string
+  - name: site
+    type: string
+  - name: env
+    type: string
+  - name: name
+    type: string
+  - name: exector_name
+    type: string
+  - name: payload
+    type: byte_slice
+  - name: start_time
+    type: time
+  - name: end_time
+    type: time
+features:
+  - prop: id
+    feature: required
+  - prop: name
+    feature: max_length
+    feature_value: "50"
