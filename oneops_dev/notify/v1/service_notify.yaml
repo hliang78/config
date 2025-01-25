@@ -4,6 +4,8 @@ props:
     type: string
   - name: service_name
     type: string
+  - name: instance_name
+    type: string
   - name: notification_type
     type: string
   - name: severity
@@ -20,6 +22,8 @@ features:
   - prop: id
     feature: required
   - prop: service_name
+    feature: required
+  - prop: instance_name
     feature: required
   - prop: notification_type
     feature: required
