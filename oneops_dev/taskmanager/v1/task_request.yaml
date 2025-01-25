@@ -1,16 +1,16 @@
 name: TaskRequest
 props:
-  - name: id
+  - name: ID
     type: string
-  - name: name
+  - name: Name
     type: string
-  - name: request_time
+  - name: RequestTime
     type: time
-  - name: payload
+  - name: Payload
     type: byte_slice
 features:
-  - prop: id
+  - prop: ID
     feature: required
-  - prop: name
+  - prop: Name
     feature: max_length
-    feature_value: "50"
+    feature_value: 100
