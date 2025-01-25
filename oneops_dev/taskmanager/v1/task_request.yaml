@@ -2,7 +2,13 @@ name: TaskRequest
 props:
   - name: ID
     type: string
-  - name: Name
+  - name: Site
+    type: string
+  - name: Env
+    type: string
+  - name: Type
+    type: string
+  - name: Description
     type: string
   - name: RequestTime
     type: time
@@ -11,6 +17,19 @@ props:
 features:
   - prop: ID
     feature: required
-  - prop: Name
+  - prop: Site
+    feature: required
+  - prop: Site
     feature: max_length
     feature_value: 100
+  - prop: Env
+    feature: required
+  - prop: Env
+    feature: max_length
+    feature_value: 100
+  - prop: Type
+    feature: enum_values
+    feature_value: L2ServiceTask,StructTask
+  - prop: Description
+    feature: max_length
+    feature_value: 1000
