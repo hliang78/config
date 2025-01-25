@@ -2,20 +2,18 @@ name: TaskResponse
 props:
   - name: id
     type: string
-  - name: site
-    type: string
-  - name: env
-    type: string
   - name: name
     type: string
-  - name: exector_name
-    type: string
+  - name: request_time
+    type: time
   - name: payload
     type: byte_slice
   - name: start_time
     type: time
   - name: end_time
     type: time
+  - name: executor_name
+    type: string
 features:
   - prop: id
     feature: required
