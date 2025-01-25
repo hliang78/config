@@ -1,45 +1,45 @@
 name: ServiceNotify
 props:
-  - name: id
+  - name: ID
     type: string
-  - name: service_name
+  - name: ServiceName
     type: string
-  - name: instance_name
+  - name: InstanceName
     type: string
-  - name: notification_type
+  - name: NotificationType
     type: string
-  - name: severity
+  - name: Serverity
     type: string
-  - name: message
+  - name: Message
     type: string
-  - name: timestamp
+  - name: Timestamp
     type: time
-  - name: recipients
+  - name: Recipients
     type: string_slice
-  - name: metadata
+  - name: Metadata
     type: string_map
 features:
-  - prop: id
+  - prop: ID
     feature: required
-  - prop: service_name
+  - prop: ServiceName
     feature: required
-  - prop: instance_name
+  - prop: InstanceName
     feature: required
-  - prop: notification_type
+  - prop: NotificationType
     feature: required
-  - prop: notification_type
+  - prop: NotificationType
     feature: enum_values
     feature_value: "alert,info,warning"
-  - prop: severity
+  - prop: Serverity
     feature: enum_values
     feature_value: "critical,high,medium,low"
-  - prop: message
+  - prop: Message
     feature: required
-  - prop: message
+  - prop: Message
     feature: max_length
     feature_value: "1000"
-  - prop: timestamp
+  - prop: Timestamp
     feature: required
-  - prop: recipients
+  - prop: Recipients
     feature: min_length
     feature_value: "1"
