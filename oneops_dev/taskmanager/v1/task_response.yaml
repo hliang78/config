@@ -1,20 +1,25 @@
 name: TaskResponse
 props:
-  - name: ID
-    type: string
-  - name: Name
-    type: string
-  - name: StartTime
-    type: time
-  - name: EndTime
-    type: time
-  - name: ExecutorName
-    type: string
-  - name: Payload
-    type: byte_slice
+    - name: ID
+      type: string
+    - name: Payload
+      type: byte_slice
+    - name: Name
+      type: string
+    - name: EndTime
+      type: time
+    - name: StartTime
+      type: time
+    - name: ExecutorName
+      type: string
+    - name: Error
+      type: string  
 features:
-  - prop: ID
-    feature: required
-  - prop: Name
-    feature: max_length
-    feature_value: 100
+    - prop: ID
+      feature: required
+    - prop: Name
+      feature: max_length
+      feature_value: 100
+    - prop: Error
+      feature: max_length
+      feature_value: 200
